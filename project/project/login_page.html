@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login page</title>
+    <style>
+        .box {
+            width: 75%;
+            margin: 40px auto;
+            display: flex;
+            box-shadow: 5px 5px 30px ;
+        }
+    
+
+        .box1 {
+           
+            width: 50%;
+            height: 600px;
+            background-color:  #17a2b8;
+        }
+
+        .box2 {
+            
+            width: 50%;
+            height: 100%;
+            background-color: rgb(249, 249, 249);
+        }
+
+        .sign-details {
+            padding: 60px;
+        }
+        .inp{
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid rgb(170, 168, 168);
+            padding: 10px;
+            width: 70%;
+            outline: none;
+        }
+        .green{
+            background-color:  #17a2b8;
+            border-radius: 15px;
+            padding: 10px 50px;
+            color: white;
+            border: none;
+        }
+        /* for mobile */
+        @media screen and (max-width :778px) {
+            
+            .box {
+            width: 80%;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            /* box-shadow: 2px 2px ; */
+        }
+
+        
+        .box1 {
+           height: 50vh;
+           width: 100%;
+       }
+       .box2 {
+            
+            width: 100%;
+            
+        }
+
+       .inp{
+           width: 80%;
+       }
+    
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- signup section start -->
+        <div class="box">
+            <form action class="box1">
+                <h1 style="color: white; margin-top: 120px; font-size: 50px" align="center">
+                    <b>Login</b>
+                </h1>
+                <p style="color: white; font-size: 15px; margin-top: -20px" align="center">
+                    to use all features of the application
+                </p>
+                <img style="margin-left: 182px; margin-top: 200px" width="130px"
+                    src="./Eo_circle_green_white_checkmark.svg.png" alt />
+            </form>
+
+            <!-- login section start -->
+            <div class="box2">
+                <div class="sign-details">
+                    <form  action="login.php" method="post">
+                        <div >
+                        <label for>USERNAME</label><br>
+                        <br />
+                        <input class="inp" type="text" name="username" required placeholder="Enter Username" /><br>
+                        <br />
+                        <label for>EMAIL</label><br>
+                        <br />
+                        <input class="inp" type="email" name="mail" required  placeholder="Enter Email"/><br>
+                        <br />
+                        <label for>PHONE</label><br>
+                        <br />
+                        <input class="inp" type="phone" name="phone" required placeholder="Enter Phone Number" /><br>
+                        <br />
+                        <label for>PASSWORD</label><br>
+                        <br />
+                        <input class="inp" type="password" name="password" required placeholder="Enter Password" /><br>
+                        <br>
+                        <div>
+                            <input id name type="checkbox" required  value />
+                            <label id="_label" for>
+                                By login i agree with
+                                <a style="color:  #17a2b8;" href>terms and conditions</a></label><br>
+                            <br />
+                            
+                            <input type="submit" name="submit" class="green" value="submit"> 
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 200vh;
+
+    }
+#rcorners {
+  border-radius: 50px;
+  border: 2px solid ;
+  padding: 20px;
+  width: 200px;
+  height: 10px;
+}
+input[type=submit]{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=number]{
+  border-radius: 40px;
+  border: 2px solid ;
+  padding: 20px;
+  width: 200px;
+  height: 10px;
+}
+#style {
+    min-height: 500px;
+    align-self: center;
+    background-color: seagreen;
+   border-radius: 10px;
+  border: 2px solid ; 
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.box{
+
+}
+.box .icon{
+    position: absolute;
+    right: 20px;
+}
+</style>
+</head>
+<body>
+
+<div id="style">
+<form action="login.php" method="post" enctype="multipart/form-data">
+    <h1><b>Login</b></h1>
+        <div  align="left" class="box" width="30%">
+           <label align=""><h3>Username:</h3></label>
+           <input id="rcorners" type="text" name="fname" size="20" placeholder="First Name">
+        <input type="text"id="rcorners"  name="lname" size="20" placeholder="Last Name">
+    </div>
+    <div align="left" class="box" width="30%">
+           <label align=""><h3>Email:</h3></label>
+           <span class="icons"><ion-icon name="mail"></ion-icon></span>
+           <input id="rcorners" type="email" name="mail" size="20" placeholder="123@gmail.com" required>
+    </div>
+
+    
+    <div align="left" class="box" width="30%">
+           <label align=""><h3>Phone Number:</h3></label>
+           <span class="icons"><ion-icon align="right" name="call"></ion-icon></span>
+           <input id="rcorners" type="tel" name="phone" placeholder="0300********" restrict="" maxlength="12" required>
+    </div>
+    <div align="left" class="box" width="30%">
+           <label align=""><h3>Password:</h3></label>
+           <span class="icons"><ion-icon name="lock-closed"></ion-icon></span>
+           <input id="rcorners" type="text" name="password" size="20" placeholder="*******" restrict="" maxlength="10" required>
+    </div><br>
+      <div align="left" class="box" width="30%" >
+       <label align=""><h3>Country:</h3></label>
+    <select id="rcorners" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select></div><br>
+        
+        <input type="submit" name="post" value="post">
+        <div></div>
+</form>
+           
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+</html>

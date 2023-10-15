@@ -1,0 +1,21 @@
+.header{
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.bttn{
+    list-style: none;
+    text-decoration: none;
+}
+.pp{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.primaryfont{
+    font-family: sans-serif;
+}
+
